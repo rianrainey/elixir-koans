@@ -5,31 +5,31 @@ defmodule Numbers do
   @intro "Why is the number six so scared? Because seven eight nine!\nWe should get to know numbers a bit more!"
 
   koan "Are you odd?" do
-    assert Integer.is_odd(3) == ___
+    assert Integer.is_odd(3) == true
   end
 
   koan "Actually you might be even" do
-    assert Integer.is_even(4) == ___
+    assert Integer.is_even(4) == true
   end
 
-  koan "Let's grab the individual digits in a list" do 
+  koan "Let's grab the individual digits in a list" do
     individual_digits = Integer.digits(58127)
     assert individual_digits == ___
   end
 
-  koan "Oh no! I need it back together" do 
+  koan "Oh no! I need it back together" do
     number = Integer.undigits([1, 2, 3, 4])
 
     assert number == ___
   end
 
-  koan "I think I need my number as a char" do 
+  koan "I think I need my number as a char" do
     char_digit = Integer.to_char_list(7)
 
     assert char_digit == ___
   end
 
-  koan "Actually I want my number as a string" do 
+  koan "Actually I want my number as a string" do
     string_digit = Integer.to_string(1234)
 
     assert string_digit == ___
